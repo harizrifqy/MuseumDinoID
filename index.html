@@ -1,10 +1,9 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>MUSEUM</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,15 +16,16 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="app.css">
 </head>
-
 <body>
     <nav class="navbar navbar-expand-lg" id="navbar">
         <div class="container-fluid">
             <a class="navbar-brand bold-text" href="#">MUSEUM</a>
+            <!-- start component burger -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- end component burger -->
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="#home">Home</a>
@@ -33,6 +33,14 @@
                     <a class="nav-link" href="#tiket">Tiket</a>
                 </div>
             </div>
+                        
+            <!-- start component search -->
+            <form class="d-none d-lg-flex" role="search" id="btn-custom">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">  
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <!-- end component search -->
+            
         </div>
     </nav>
     <section class="container-fluid px-0">
@@ -40,25 +48,26 @@
             <div class="col-lg-6">
                 <div class="text-white text-center d-none d-lg-block" id="title-head">
                     <h1>MUSEUM OF DINO</h1>
-                    <h1>MUSEUM OF DINO</h1>
-                    <h1>MUSEUM OF DINO</h1>
-                    <h1>MUSEUM OF DINO</h1>
-                    <h1>MUSEUM OF DINO</h1>
-                    <h1>MUSEUM OF DINO</h1>
+                    <p class="description">Museum Arkeologi adalah institusi yang menyimpan, meneliti, dan memamerkan artefak-artefak dari
+                        masa lalu, seperti peralatan, patung, keramik, fosil, dan benda-benda budaya lainnya. Koleksi di
+                        museum ini biasanya berfokus pada benda-benda bersejarah yang ditemukan melalui penggalian
+                        arkeologi, yang memberikan wawasan tentang kehidupan, budaya, dan teknologi masyarakat kuno. Di
+                        museum arkeologi, pengunjung dapat mempelajari sejarah peradaban, evolusi budaya, dan berbagai
+                        peninggalan arkeologis dari berbagai periode dan wilayah.</p>
                 </div>
             </div>
             <div class="col-lg-6">
-                <img class="img-fluid" src="images/dino-1.jpg" alt="">
+                <img class="img-fluid" src="images/dino-1.png" alt="">
             </div>
         </div>
 
 
         <div class="row align-items-center content" id="about">
             <div class="col-md-6 order-2 order-md-1">
-                <img src="images/dino.jpg" alt="" class="img-fluid">
+                <img src="images/dino.png" alt="" class="img-fluid">
             </div>
             <div class="col-md-6 text-center order-1 order-md-2">
-                <div class="row justify-content-center">
+                <div class="row text-white justify-content-center">
                     <div class="col-10 col-lg-8 blurb pt-3"></div>
                     <h2>Museum of Ark</h2>
                     <!-- <img src="images/head-dino.png" max-width="10px" class="img-fluid id-none d-lg-inline"> -->
@@ -79,24 +88,24 @@
 
         <div class="row align-items-center content" id="tiket">
             <div class="col-md-6 order-2 order-md-1">
-                <img src="images/dino-2.jpg" alt="" class="img-fluid">
+                <img src="images/dino.png" alt="" class="img-fluid">
             </div>
             <div class="col-md-6 text-center">
-                <div class="row justify-content-center">
-                    <div class="col-10 col-lg-8 blurb pt-3 mb-5"></div>
-                        <h2>Museum of Ark</h2>
-                        <!-- <img src="images/head-dino.png" max-width="10px" class="img-fluid id-none d-lg-inline"> -->
-                        <p class="lead">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, eligendi soluta odit
-                            aliquam maiores officia deserunt enim aut voluptatem laborum alias vel impedit blanditiis nisi
-                            ipsam, rem molestias hic pariatur.
-                            Optio eveniet beatae, blanditiis delectus totam iure sapiente, molestias nihil exercitationem
-                            doloribus ut, nemo assumenda enim placeat ipsa. Ratione corporis nulla minima voluptatum,
-                            corrupti aliquam iusto eum sapiente esse. Officia.
-                            Vero tempore quod minus numquam vel corrupti dicta quas. Enim laborum sed maxime dolor ipsum
-                            nisi expedita maiores! Minus tempore, nisi rem quia repellendus necessitatibus iure ea at eos
-                            ex.
-                        </p>
+                <div class="row text-white justify-content-center">
+                    <div class="col-10 col-lg-8 blurb pt-3"></div>
+                    <h2>Museum of Ark</h2>
+                    <!-- <img src="images/head-dino.png" max-width="10px" class="img-fluid id-none d-lg-inline"> -->
+                    <p class="lead">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, eligendi soluta odit
+                        aliquam maiores officia deserunt enim aut voluptatem laborum alias vel impedit blanditiis nisi
+                        ipsam, rem molestias hic pariatur.
+                        Optio eveniet beatae, blanditiis delectus totam iure sapiente, molestias nihil exercitationem
+                        doloribus ut, nemo assumenda enim placeat ipsa. Ratione corporis nulla minima voluptatum,
+                        corrupti aliquam iusto eum sapiente esse. Officia.
+                        Vero tempore quod minus numquam vel corrupti dicta quas. Enim laborum sed maxime dolor ipsum
+                        nisi expedita maiores! Minus tempore, nisi rem quia repellendus necessitatibus iure ea at eos
+                        ex.
+                    </p>
                 </div>
             </div>
         </div>

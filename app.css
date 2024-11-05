@@ -4,7 +4,7 @@ body {
 }
 
 #navbar {
-    background-color: #A2D2DF;
+    /* background-color: #7AB2D3; */
     font-size: 1.5rem;
     font-weight: 100;
 }
@@ -14,24 +14,36 @@ body {
     transition: backgroud 500ms;
 }
 
+
 #navbar .nav-link {
-    color: #FEFFA7;
+    color: #4A628A;
     font-size: 1.3rem;
+    transition: color 0.3s ease;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
+/* Efek hover pada fitur */
 #navbar .nav-link:hover {
-    color: #FFE700;
+    color: #7AB2D3;
+    font-weight: 500;
 }
 
 #navbar .navbar-brand {
-    color: #FEFF9F;
+    color: #4A628A;
     font-size: 1.5rem;
     font-weight: 600;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3); /* Shadow warna hitam transparan */
+    transition: all 0.3s ease;
 }
 
 #title-head {
+    /* color: #4A628A; */
     font-weight: 100;
     font-size: 4rem;
+}
+
+.description {
+    font-size: 20px;
 }
 
 .blurb h2 {
@@ -46,11 +58,11 @@ body {
     font-size: 1.125rem;
     line-height: 2;
 }
-/* 
+
 .content {
-    margin-top: 100px;
-    margin-bottom: 100px;
-} */
+    margin-top: 50px;
+    margin-bottom: 50px;
+} 
 
 @media (max-widht: 1200px) {
     #title-head h1 {
