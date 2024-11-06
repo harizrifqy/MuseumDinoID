@@ -4,7 +4,7 @@ body {
 }
 
 #navbar {
-    /* background-color: #7AB2D3; */
+    /* background-color: #B9E5E8; */
     font-size: 1.5rem;
     font-weight: 100;
 }
@@ -63,6 +63,10 @@ body {
     margin-top: 50px;
     margin-bottom: 50px;
 } 
+
+#vr.dino {
+    max-width: 258px;
+}
 
 @media (max-widht: 1200px) {
     #title-head h1 {

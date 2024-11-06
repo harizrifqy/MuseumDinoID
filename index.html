@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,34 +14,42 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">     
+    <!-- Link CSS Bootstrap
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link Font Awesome CDN -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">   
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css"> -->
     <link rel="stylesheet" href="app.css">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg" id="navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand bold-text" href="#">MUSEUM</a>
-            <!-- start component burger -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+    <main>
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container-fluid">
+                <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="Bootstrap"
+                width="50" height="32">
+                <a class="navbar-brand bold-text" href="#">MUSEUM</a>
+                <!-- start component burger -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- end component burger -->
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link" href="about.html">About</a>
                     <a class="nav-link" href="#tiket">Tiket</a>
                 </div>
             </div>
-                        
+            
             <!-- start component search -->
             <form class="d-none d-lg-flex" role="search" id="btn-custom">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">  
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
             <!-- end component search -->
-            
         </div>
     </nav>
     <section class="container-fluid px-0">
@@ -48,17 +57,15 @@
             <div class="col-lg-6">
                 <div class="text-white text-center d-none d-lg-block" id="title-head">
                     <h1>MUSEUM OF DINO</h1>
-                    <p class="description">Museum Arkeologi adalah institusi yang menyimpan, meneliti, dan memamerkan artefak-artefak dari
-                        masa lalu, seperti peralatan, patung, keramik, fosil, dan benda-benda budaya lainnya. Koleksi di
-                        museum ini biasanya berfokus pada benda-benda bersejarah yang ditemukan melalui penggalian
-                        arkeologi, yang memberikan wawasan tentang kehidupan, budaya, dan teknologi masyarakat kuno. Di
-                        museum arkeologi, pengunjung dapat mempelajari sejarah peradaban, evolusi budaya, dan berbagai
-                        peninggalan arkeologis dari berbagai periode dan wilayah.</p>
+                    <p class="description">Museum of Dino, atau sering disebut Dinosaur Museum, adalah tempat yang
+                        dirancang untuk menampilkan berbagai fosil dan informasi seputar kehidupan dinosaurus. Di
+                        dalamnya, pengunjung bisa melihat replika tulang belulang <br> dinosaurus yang sudah disusun
+                        sedemikian rupa sehingga menyerupai bentuk <br> aslinya ketika hidup jutaan tahun yang lalu.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-6">
-                <img class="img-fluid" src="images/dino-1.png" alt="">
-            </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="images/dino-1.png" alt="">
+                </div>
         </div>
 
 
@@ -69,23 +76,16 @@
             <div class="col-md-6 text-center order-1 order-md-2">
                 <div class="row text-white justify-content-center">
                     <div class="col-10 col-lg-8 blurb pt-3"></div>
-                    <h2>Museum of Ark</h2>
+                    <h2>Fosil dan Rangka Dinosaurus</h2>
                     <!-- <img src="images/head-dino.png" max-width="10px" class="img-fluid id-none d-lg-inline"> -->
                     <p class="lead">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat impedit rerum voluptatibus
-                        perspiciatis tempora laudantium temporibus aspernatur alias ipsum nihil, illo aperiam id vero
-                        veniam esse fugit autem quasi accusamus!
-                        Perspiciatis similique nulla illo ratione sunt nostrum consequatur iure tempore, repellat nam
-                        ipsa magni temporibus repudiandae dolore quis. Consequuntur deleniti eum voluptas, dolore iste
-                        nulla. Perferendis, iure. Error, voluptas dolor.
-                        Reiciendis delectus nam magnam nesciunt exercitationem officiis accusamus corporis tenetur,
-                        voluptatibus quasi mollitia harum, reprehenderit quibusdam dolorum praesentium possimus optio
-                        repudiandae, quae ipsa quidem rerum cum nulla. Enim, architecto esse!
+                        Museum ini biasanya menampilkan kerangka lengkap atau parsial dinosaurus, seperti Tyrannosaurus
+                        Rex, Triceratops, dan Velociraptor, yang disusun <br>dalam posisi tertentu agar lebih realistis.
                     </p>
                 </div>
             </div>
         </div>
-
+        
         <div class="row align-items-center content" id="tiket">
             <div class="col-md-6 order-2 order-md-1">
                 <img src="images/dino.png" alt="" class="img-fluid">
@@ -93,26 +93,74 @@
             <div class="col-md-6 text-center">
                 <div class="row text-white justify-content-center">
                     <div class="col-10 col-lg-8 blurb pt-3"></div>
-                    <h2>Museum of Ark</h2>
+                    <h2> Representasi Visual 3D</h2>
                     <!-- <img src="images/head-dino.png" max-width="10px" class="img-fluid id-none d-lg-inline"> -->
                     <p class="lead">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, eligendi soluta odit
-                        aliquam maiores officia deserunt enim aut voluptatem laborum alias vel impedit blanditiis nisi
-                        ipsam, rem molestias hic pariatur.
-                        Optio eveniet beatae, blanditiis delectus totam iure sapiente, molestias nihil exercitationem
-                        doloribus ut, nemo assumenda enim placeat ipsa. Ratione corporis nulla minima voluptatum,
-                        corrupti aliquam iusto eum sapiente esse. Officia.
-                        Vero tempore quod minus numquam vel corrupti dicta quas. Enim laborum sed maxime dolor ipsum
-                        nisi expedita maiores! Minus tempore, nisi rem quia repellendus necessitatibus iure ea at eos
-                        ex.
+                        Diorama sering kali menggunakan teknik perspektif untuk memberi kesan <br> kedalaman dan jarak,
+                        sehingga tampak lebih nyata. Diorama atau pameran 3D <br> juga biasanya menggambarkan habitat asli
+                        dinosaurus
+                        memberi gambaran <br>tentang
+                        lingkungan dan ekosistem yang mereka huni.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row align-items-center content" id="tiket">
+            <div class="col-md-6 order-2 order-md-1">
+                <img src="images/dino.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 text-center order-1 order-md-2">
+                <div class="row text-white justify-content-center">
+                    <div class="col-10 col-lg-8 blurb pt-3"></div>
+                    <h2>Pameran Geologi dan Sejarah Bumi</h2>
+                    <!-- <img src="images/head-dino.png" max-width="10px" class="img-fluid id-none d-lg-inline"> -->
+                    <p class="lead">
+                        Selain dinosaurus, museum ini juga menjelaskan kondisi geologi, seperti aktivitas gunung berapi
+                        dan pergeseran lempeng tektonik, yang turut memengaruhi kehidupan dinosaurus.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row align-items-center content" id="tiket">
+            <div class="col-md-6 order-2 order-md-1">
+                <img src="images/education.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 text-center">
+                <div class="row text-white justify-content-center">
+                    <div class="col-10 col-lg-8 blurb pt-3"></div>
+                    <h2>Eksperimen Edukatif</h2>
+                    <!-- <img src="images/head-dino.png" max-width="10px" class="img-fluid id-none d-lg-inline"> -->
+                    <p class="lead">
+                        Ada juga area edukatif di mana anak-anak dapat belajar melalui permainan <br> interaktif atau ikut
+                        serta dalam simulasi penggalian fosil.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center content" id="tiket">
+            <div class="col-md-6 order-2 order-md-1">
+                <img src="images/vr-dino.png" alt="" class="img-fluid" id="vr-dino">
+            </div>
+            <div class="col-md-6 text-center order-1 order-md-2">
+                <div class="row text-white justify-content-center">
+                    <div class="col-10 col-lg-8 blurb pt-3"></div>
+                    <h2>Teknologi Interaktif</h2>
+                    <!-- <img src="images/head-dino.png" max-width="10px" class="img-fluid id-none d-lg-inline"> -->
+                    <p class="lead">
+                        Museum modern sering menggunakan teknologi seperti augmented reality (AR), virtual reality (VR),
+                        dan layar sentuh interaktif untuk menambah wawasan pengunjung.
                     </p>
                 </div>
             </div>
         </div>
     </section>
+</main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
@@ -126,5 +174,28 @@
         });
     </script>
 </body>
+    <footer class="bg-white text-navy py-4 text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- <div class="col-md-4">
+                    <!-- <h5>About Us</h5> -->
+                    <!-- <p>Kami menunggu kedatangan teman-teman bersama pasangan, saudara, bahkan bersama keluarga tercinta kalian...</p>
+                </div> --> 
+                <!-- <div class="text-center mt-3">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                </div>                 -->
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: info@example.com</p>
+                    <p>Phone: +123 456 7890</p>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2024 Your Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
 </html>
