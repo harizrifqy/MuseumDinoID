@@ -1,3 +1,4 @@
+
 body {
     background-color: #B9E5E8;
     font-family: "Nunito", sans-serif;
@@ -38,12 +39,39 @@ body {
 
 #title-head {
     /* color: #4A628A; */
-    font-weight: 100;
+    font-weight: 400;
     font-size: 4rem;
 }
 
 .description {
     font-size: 20px;
+    font-weight: 300;
+}
+
+#jadwal li {
+    position: relative;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #4A628A;
+    transition: color 0.3s ease;
+    list-style-type: none;
+    padding-left: 35px;
+    text-align: start;
+}
+
+#jadwal li:hover {
+    color: #3182ce;
+    font-weight: bold;
+    
+}
+
+#jadwal li::before {
+    content: "✔"; /* Ikon centang, bisa diubah sesuai keinginan */
+    position: absolute;
+    left: 0;
+    color: #3182ce;
+    font-size: 16px;
+    line-height: 1;
 }
 
 .blurb h2 {
@@ -64,8 +92,129 @@ body {
     margin-bottom: 50px;
 } 
 
-#vr.dino {
-    max-width: 258px;
+.waktu-kunjungan p {
+    font-size: 160px;
+    color: red;
+}
+/* start tiket.html */
+
+button {
+    font-size: 14px;
+    background-color: #7AB2D3;
+    color: white;
+    padding: 10px 100px;
+    border-radius: 10px;
+    display: inline-block;
+    border: none;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.pricing-button:hover,
+.pricing-button:focus{
+    background-color: #4A628A;
+}
+
+.pricing-table {
+    background-color: #DFF2EB;
+    padding: 70px 60px;
+    border-radius: 1em; 
+    margin-top: 100px;
+}
+
+.box-pricing {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-left: 90px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 90px;
+}
+
+/* bagian judul layanan */
+.pricing-header {
+    background-color:  #B9E5E8;
+    color: #133E87;
+    font-size: 21px;
+    padding: 0.5em 0.3em;
+    border-radius: 20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.pricing-start,
+.pricing-duration {
+    font-size: 16px;
+    color: #666;
+    margin: 21px;
+}
+
+.pricing-class {
+    font-size: 22px;
+    color: #3182ce;
+    transition: color 0.3s ease;
+}
+
+.pricing-class:hover {
+    color: #234c94;
+    font-weight: bold;
+}
+
+/* Style untuk daftar fitur */
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+    color: #2d3748;
+    margin: 0;
+}
+
+.pricing-features li {
+    position: relative;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #4a5568;
+    transition: color 0.3s ease;
+    padding-left: 35px;
+}
+
+/* Efek hover pada fitur */
+.pricing-features li:hover {
+    color: #3182ce;
+    font-weight: bold;
+}
+
+/* Ikon sebelum setiap fitur */
+.pricing-features li::before {
+    content: "✔"; /* Ikon centang, bisa diubah sesuai keinginan */
+    position: absolute;
+    left: 0;
+    color: #3182ce;
+    font-size: 16px;
+    line-height: 1;
+}
+
+/* Style untuk judul fitur unggulan */
+.pricing-best-features {
+    font-size: 20px;
+    color: #2a4365;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 20px 0 15px;
+    position: relative;
+}
+
+/* Garis bawah yang dekoratif */
+.pricing-best-features::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #3182ce;
+    margin: 8px auto 0; /* Posisikan di tengah */
+    border-radius: 2px;
 }
 
 @media (max-widht: 1200px) {

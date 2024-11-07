@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiket Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <main>
+        <nav class="navbar fixed-top navbar-expand-lg mt-2" id="navbar">
+            <div class="container-fluid">
+                <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="Bootstrap"
+                    width="50" height="32">
+                <a class="navbar-brand bold-text" href="#">MUSEUM</a>
+                <!-- start component burger -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- end component burger -->
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="tiket.html">Tiket</a>
+                    </div>
+                </div>
+                <form class="d-none d-lg-flex" role="search" id="btn-custom">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <section class="box-pricing">
+            <!-- start component Tabel ke-1  -->
+            <div class="pricing-table">
+                <h2 class="pricing-header">tiket reguler</h2>
+    
+                <article class="pricing-plan text-center">
+                    <p class="pricing-start">mulai dari</p>
+                    <span class="pricing-class">Rp 60.0000</span>
+                    <p class="pricing-duration">perhari</p>
+                    <h3 class="pricing-best-features">fitur Unggulan</h3>
+                    <ul class="pricing-features text-start mb-5">
+                        <li>Galeri Umum</li>
+                        <li>Akses ke semua ruang pameran utama</li>
+                        <li>Berlaku untuk satu kali kunjungan</li>
+                        <li> Harga tiket paling terjangkau</li>
+                    </ul>
+                </article>
+    
+                <button type="button" class="pricing-button">Order</button>
+    
+            </div>
+            <!-- end component Tabel ke-1  -->
+    
+            <!-- start component Tabel ke-2  -->
+            <div class="pricing-table">
+                <h2 class="pricing-header">tiket premium</h2>
+    
+                <article class="pricing-plan text-center">
+                    <p class="pricing-start">mulai dari</p>
+                    <span class="pricing-class">Rp 175.0000</span>
+                    <p class="pricing-duration">perhari</p>
+                    <h3 class="pricing-best-features">fitur Unggulan</h3>
+                    <ul class="pricing-features text-start mb-5">
+                        <li>Akses luas lebih dibanding tiket reguler</li>
+                        <li>Sesi tur yang dipandu</li>
+                        <li>Berlaku untuk satu kali kunjungan</li>
+                        <li>Harga Sedikit lebih mahal </li>
+                    </ul>
+                </article>
+    
+                <button type="button" class="pricing-button">Order</button>
+    
+            </div>
+            <!-- end component Tabel ke-2  -->
+    
+    
+            <!-- start component Tabel ke-3  -->
+            <div class="pricing-table">
+                <h2 class="pricing-header">tiket vIP</h2>
+    
+                <article class="pricing-plan text-center mb-5">
+                    <p class="pricing-start">mulai dari</p>
+                    <span class="pricing-class">Rp 250.000</span>
+                    <p class="pricing-duration">perhari</p>
+                    <h3 class="pricing-best-features">fitur Unggulan</h3>
+                    <ul class="pricing-features text-start mb-5">
+                        <li>Mencakup semua akses yang tersedia</li>
+                        <li>Pemandu pribadi dan Akses lounge VIP</li>
+                        <li>berlaku untuk lebih dari satu hari</li>
+                        <li>Tiket VIP adalah yang paling mahal</li>
+                    </ul>
+                </article>
+    
+                <button type="button" class="pricing-button">Order</button>
+    
+            </div>
+            <!-- end component Tabel ke-3  -->
+        </section>
+    </main>
+
+
+    <footer class="bg-white text-navy py-4 text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <h5 class="mb-4">Contact Us</h5>
+                    <p><i class="fa-solid fa-envelope me-2"></i>Email: info@example.com</p>
+                    <p><i class="fa-solid fa-square-phone me-2"></i>Phone: +123 456 7890</p>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2024 MUSEUM of Dino. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
