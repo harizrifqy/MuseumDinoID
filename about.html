@@ -14,13 +14,18 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
+        <!-- Link CSS Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">   
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
     <nav class="navbar fixed-top navbar-expand-lg mt-2" id="navbar">
         <div class="container-fluid">
-            <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="Bootstrap"
-                width="50" height="32">
+            <img src="/images/head-dino.png" alt="Bootstrap"
+                width="60" height="60">
             <a class="navbar-brand bold-text" href="#">MUSEUM</a>
             <!-- start component burger -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -33,12 +38,13 @@
                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     <a class="nav-link" href="about.html">About</a>
                     <a class="nav-link" href="tiket.html">Tiket</a>
+                    <a class="nav-link" href="event.html">Event</a>
                 </div>
             </div>
 
             <!-- start component search -->
             <form class="d-none d-lg-flex" role="search" id="btn-custom">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
             <!-- end component search -->
@@ -65,7 +71,7 @@
             <div class="col-md-6 order-2 order-md-1">
                 <img src="images/vr-dino.png" alt="" class="img-fluid">
             </div>
-            <div class="col-md-6 text-center order-1 order-md-2">
+            <div class="col-md-6 text-center order-1 order-md-2 mb-5">
                 <div class="row justify-content-center">
                     <div class="col-10 col-lg-8 blurb pt-5" id="jadwal">
                         <h2 class="">Jadwal Kunjungan</h2>
@@ -100,18 +106,41 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
         </script>
 
-<footer class="bg-white text-navy py-4 text-center">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-4">
-                <h5 class="mb-4">Contact Us</h5>
-                <p><i class="fa-solid fa-envelope me-2"></i>Email: info@example.com</p>
-                <p><i class="fa-solid fa-square-phone me-2"></i>Phone: +123 456 7890</p>
-            </div>
+<footer class="dino-footer">
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h3>Tentang Museum Dino</h3>
+            <p>Museum Dino adalah destinasi edukatif yang menyajikan informasi menarik tentang dunia prasejarah dan kehidupan dinosaurus. Temukan fosil asli, diorama, dan pameran interaktif yang mengajak Anda menjelajah masa lalu jutaan tahun yang lalu.</p>
         </div>
-        <div class="text-center mt-3">
-            <p>&copy; 2024 MUSEUM of Dino. All rights reserved.</p>
+
+        <div class="footer-section links">
+            <h3>Navigasi</h3>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="tiket.html">Tiket</a></li>
+                <li><a href="event.html">Acara</a></li>
+            </ul>
         </div>
+
+        <div class="footer-section contact-info">
+            <h3>Kontak Kami</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Jl. Prasejarah No.123, Kota Dinosaurus</p>
+            <p><i class="fas fa-phone"></i> +62 123-4567-890</p>
+            <p><i class="fas fa-envelope"></i> info@museumdino.com</p>
+        </div>
+
+        <div class="footer-section social-media">
+            <h3>Ikuti Kami</h3>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/museumdinoid/"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-youtube-square"></i></a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 Museum Dino | Hak Cipta Dilindungi</p>
     </div>
 </footer>
 </body>
