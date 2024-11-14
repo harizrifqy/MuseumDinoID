@@ -10,6 +10,7 @@ body {
     font-weight: 100;
 }
 
+
 #navbar .scrolled {
     background-color: #c2ded1;
     transition: backgroud 500ms;
@@ -38,9 +39,8 @@ body {
 }
 
 #title-head {
-    /* color: #4A628A; */
     font-weight: 400;
-    font-size: 4rem;
+    font-size: 2.2rem;
 }
 
 .description {
@@ -92,35 +92,8 @@ body {
     margin-bottom: 50px;
 } 
 
-.waktu-kunjungan p {
-    font-size: 160px;
-    color: red;
-}
+
 /* start tiket.html */
-
-button {
-    font-size: 14px;
-    background-color: #7AB2D3;
-    color: white;
-    padding: 10px 100px;
-    border-radius: 10px;
-    display: inline-block;
-    border: none;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.pricing-button:hover,
-.pricing-button:focus{
-    background-color: #4A628A;
-}
-
-.pricing-table {
-    background-color: #DFF2EB;
-    padding: 70px 60px;
-    border-radius: 1em; 
-    margin-top: 100px;
-}
 
 .box-pricing {
     display: flex;
@@ -129,8 +102,21 @@ button {
     flex-wrap: wrap;
     padding-left: 90px;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     margin-right: 90px;
+}
+
+/* tabel harga */
+.pricing-table {
+    background-color: #DFF2EB;
+    padding: 70px 60px;
+    border-radius: 1em; 
+    margin-top: 100px;
+}
+
+.pricing-button:hover,
+.pricing-button:focus{
+    background-color: #4A628A;
 }
 
 /* bagian judul layanan */
@@ -217,9 +203,148 @@ button {
     border-radius: 2px;
 }
 
+button {
+    font-size: 14px;
+    background-color: #7AB2D3;
+    color: white;
+    padding: 10px 100px;
+    border-radius: 10px;
+    display: inline-block;
+    border: none;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+/* end tiket.html */
+
+/* start event.html */
+
+#event-card {
+    margin: 100px;
+}
+
+/* Untuk mengatur row dan col agar kartu memiliki tata letak yang seragam */
+.row-cols-1 .col, .row-cols-md-2 .col {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#event-card .card {
+    height: 100%; /* Memastikan semua kartu memiliki tinggi yang sama */
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan lembut */
+}
+
+#event-card .card-img-top {
+    height: 250px; /* Menetapkan tinggi seragam untuk gambar */
+    object-fit: cover; /* Memastikan gambar memenuhi area */
+    border-radius: 8px 8px 0 0;
+}
+
+#event-card .card-body {
+    flex-grow: 1; /* Mengisi sisa ruang pada kartu */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Menjaga isi kartu tetap rapi */
+    padding: 20px;
+}
+
+#event-card .card-body h4 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+#event-card .card-body ul {
+    padding: 0;
+    margin: 0 0 1em 0;
+    list-style-type: none;
+}
+
+#event-card .text-end button {
+    align-self: flex-end; /* Menjaga tombol berada di bagian bawah */
+}
+
+/* start styling footer */
+.dino-footer {
+    background-color: #4d5564;
+    color: #E2E8F0;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px 20px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    color: #63B3ED;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: #E2E8F0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #63B3ED;
+}
+
+.social-media a {
+    font-size: 24px;
+    color: #63B3ED;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-media a:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    color: #A0AEC0;
+    font-size: 14px;
+}
+/* end styling footer */
+
 @media (max-widht: 1200px) {
     #title-head h1 {
         font-weight: 100;
         font-size: 3rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .content .col-lg-6 img {
+        display: none; /* Menghilangkan gambar pada layar kecil */
     }
 }

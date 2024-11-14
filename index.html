@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,13 +21,12 @@
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="app.css">
 </head>
-
 <body>
     <main>
-        <nav class="navbar fixed-top navbar-expand-lg mt-2" id="navbar">
+        <nav class="navbar fixed-top navbar-expand-lg mt-2" id="navbar"> 
             <div class="container-fluid">
-                <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="Bootstrap"
-                    width="50" height="32">
+                <!-- <img src="/images/head-dino.png" alt="head of dino"
+                    width="60" height="60"> -->
                 <a class="navbar-brand bold-text" href="#">MUSEUM</a>
                 <!-- start component burger -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -41,7 +39,8 @@
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         <a class="nav-link" href="about.html">About</a>
-                        <a class="nav-link" href="tiket.html">Tiket</a>
+                        <a class="nav-link" href="tiket.html">Ticket</a>
+                        <a class="nav-link" href="event.html">Event</a>
                     </div>
                 </div>
 
@@ -55,16 +54,17 @@
         </nav>
 
         <section>
+            <!-- start carousel atau slide gambar -->
             <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="images\dino-1.png" class="d-block w-100" alt="...">
+                        <img src="images\education.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
                         <img src="images\dino.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="images\education.png" class="d-block w-100" alt="...">
+                        <img src="images\dino-1.png" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
@@ -78,12 +78,14 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+            <!-- end carousel atau slide gambar -->
         </section>
         <section class="container-fluid px-0">
+            <!-- start deskripsi museum dino -->
             <div class="row align-items-center content" id="home">
                 <div class="col-lg-6">
-                    <div class="text-center d-none d-lg-block" id="title-head">
-                        <h1>MUSEUM OF DINO</h1>
+                    <div class="text-center" >
+                        <h1 id="title-head">MUSEUM OF DINO</h1>
                         <p class="description">Museum of Dino, atau sering disebut Dinosaur Museum, adalah tempat yang
                             dirancang untuk menampilkan berbagai fosil dan informasi seputar kehidupan dinosaurus. Di
                             dalamnya, pengunjung bisa melihat replika tulang belulang <br> dinosaurus yang sudah disusun
@@ -91,15 +93,16 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 d-none d-lg-block">
                     <img class="img-fluid" src="images/dino-1.png" alt="">
                 </div>
             </div>
-
-
+            <!-- end deskripsi museum dino -->
+            
+            <!-- start penjelasan fosil -->
             <div class="row align-items-center content" id="about">
                 <div class="col-md-6 order-2 order-md-1">
-                    <img src="images/dino.png" alt="" class="img-fluid">
+                    <img src="images/fosil-dino.png" alt="" class="img-fluid">
                 </div>
                 <div class="col-md-6 text-center order-1 order-md-2">
                     <div class="row justify-content-center">
@@ -115,10 +118,12 @@
                     </div>
                 </div>
             </div>
-
+            <!-- end penjelasan fosil -->
+            
+            <!-- start penjelasan Visual 3D -->
             <div class="row align-items-center content" id="tiket">
                 <div class="col-md-6 order-2 order-md-1">
-                    <img src="images/dino.png" alt="" class="img-fluid">
+                    <img src="images/visual-3D.png" alt="" class="img-fluid">
                 </div>
                 <div class="col-md-6 text-center">
                     <div class="row justify-content-center">
@@ -137,7 +142,9 @@
                     </div>
                 </div>
             </div>
-
+            <!-- end penjelasan Visual 3D -->
+            
+            <!-- start penjelasan pameran geologi -->
             <div class="row align-items-center content" id="tiket">
                 <div class="col-md-6 order-2 order-md-1">
                     <img src="images/dino.png" alt="" class="img-fluid">
@@ -146,7 +153,7 @@
                     <div class="row justify-content-center">
                         <div class="col-10 col-lg-8 blurb pt-3"></div>
                         <h2>Pameran Geologi dan Sejarah Bumi</h2>
-                        <!-- <img src="images/head-dino.png" max-width="10px" class="img-fluid id-none d-lg-inline"> -->
+                        <!-- <img src="images/head-dino.png" class="img-fluid id-none d-lg-inline" id="show-geologi"> -->
                         <p class="lead">
                             Selain dinosaurus, museum ini juga menjelaskan kondisi geologi, seperti aktivitas gunung
                             berapi
@@ -155,7 +162,9 @@
                     </div>
                 </div>
             </div>
-
+            <!-- end penjelasan pameran geologi -->
+            
+            <!-- start penjelasan eksperimen edukatif -->
             <div class="row align-items-center content" id="tiket">
                 <div class="col-md-6 order-2 order-md-1">
                     <img src="images/education.png" alt="" class="img-fluid">
@@ -173,7 +182,9 @@
                     </div>
                 </div>
             </div>
-
+            <!-- end penjelasan eksperimen edukatif -->
+            
+            <!-- start penjelasan Teknologi Interaktif -->
             <div class="row align-items-center content" id="tiket">
                 <div class="col-md-6 order-2 order-md-1">
                     <img src="images/vr-dino.png" alt="" class="img-fluid" id="vr-dino">
@@ -191,15 +202,56 @@
                     </div>
                 </div>
             </div>
+            <!-- end penjelasan Teknologi Interaktif -->
         </section>
     </main>
 
+    <footer class="dino-footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Tentang Museum Dino</h3>
+                <p>Museum Dino adalah destinasi edukatif yang menyajikan informasi menarik tentang dunia prasejarah dan kehidupan dinosaurus. Temukan fosil asli, diorama, dan pameran interaktif yang mengajak Anda menjelajah masa lalu jutaan tahun yang lalu.</p>
+            </div>
+    
+            <div class="footer-section links">
+                <h3>Navigasi</h3>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="about.html">Tentang Kami</a></li>
+                    <li><a href="tiket.html">Tiket</a></li>
+                    <li><a href="event.html">Acara</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section contact-info">
+                <h3>Kontak Kami</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Jl. Prasejarah No.123, Kota Dinosaurus</p>
+                <p><i class="fas fa-phone"></i> +62 123-4567-890</p>
+                <p><i class="fas fa-envelope"></i> info@museumdino.com</p>
+            </div>
+    
+            <div class="footer-section social-media">
+                <h3>Ikuti Kami</h3>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/museumdinoid/"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-youtube-square"></i></a>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Museum Dino | Hak Cipta Dilindungi</p>
+        </div>
+    </footer>
+    <!-- start CDN link Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
         </script>
+    <!-- end CDN link Bootstrap -->
+    
     <script>
         $(function () {
             $(document).scroll(function () {
@@ -209,28 +261,4 @@
         });
     </script>
 </body>
-<footer class="bg-white text-navy py-4 text-center">
-    <div class="container">
-        <div class="row justify-content-center">
-            <!-- <div class="col-md-4">
-                    <!-- <h5>About Us</h5> -->
-            <!-- <p>Kami menunggu kedatangan teman-teman bersama pasangan, saudara, bahkan bersama keluarga tercinta kalian...</p>
-                </div> -->
-            <!-- <div class="text-center mt-3">
-                    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-                </div>                 -->
-            <div class="col-md-4">
-                <h5 class="mb-4">Contact Us</h5>
-                <p><i class="fa-solid fa-envelope me-2"></i>Email: info@example.com</p>
-                <p><i class="fa-solid fa-square-phone me-2"></i>Phone: +123 456 7890</p>
-            </div>
-        </div>
-        <div class="text-center mt-3">
-            <p>&copy; 2024 MUSEUM of Dino. All rights reserved.</p>
-        </div>
-    </div>
-</footer>
-
 </html>
