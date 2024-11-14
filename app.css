@@ -10,23 +10,21 @@ body {
     font-weight: 100;
 }
 
-
 #navbar .scrolled {
     background-color: #c2ded1;
     transition: backgroud 500ms;
 }
 
-
 #navbar .nav-link {
     color: #4A628A;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     transition: color 0.3s ease;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 /* Efek hover pada fitur */
 #navbar .nav-link:hover {
-    color: #7AB2D3;
+    color: #387478;
     font-weight: 500;
 }
 
@@ -265,6 +263,27 @@ button {
 #event-card .text-end button {
     align-self: flex-end; /* Menjaga tombol berada di bagian bawah */
 }
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efek hover untuk card */
+.card:hover {
+    transform: scale(1.02); /* Membesarkan card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Menambahkan bayangan */
+}
+
+.pricing-table {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efek hover untuk card */
+.pricing-table:hover {
+    transform: scale(1.03); /* Membesarkan card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Menambahkan bayangan */
+}
+
 
 /* start styling footer */
 .dino-footer {

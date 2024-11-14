@@ -1,29 +1,34 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MUSEUM</title>
+    <!-- Preconnect ke Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Link Google Fonts: Nunito dan Poppins -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&family=Poppins:wght@100..900&display=swap"
         rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+
+    <!-- Link CSS Bootstrap versi terbaru -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- Link CSS Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <!-- Link Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">   
-    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Link ke CSS lokal -->
     <link rel="stylesheet" href="app.css">
+
 </head>
+
 <body>
     <main>
-        <nav class="navbar fixed-top navbar-expand-lg mt-2" id="navbar"> 
+        <nav class="navbar fixed-top navbar-expand-lg mt-2" id="navbar">
             <div class="container-fluid">
                 <!-- <img src="/images/head-dino.png" alt="head of dino"
                     width="60" height="60"> -->
@@ -38,24 +43,23 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="visit.html">Visit</a>
                         <a class="nav-link" href="tiket.html">Ticket</a>
                         <a class="nav-link" href="event.html">Event</a>
                     </div>
                 </div>
-
-                <!-- start component search -->
+                <!-- start component search  -->
                 <form class="d-none d-lg-flex" role="search" id="btn-custom">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-                <!-- end component search -->
+                </form> 
+                <!-- end component search  -->
             </div>
         </nav>
 
         <section>
             <!-- start carousel atau slide gambar -->
-            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+            <div id="carouselExampleControlsNoTouching" class="carousel slide mt-5" data-bs-touch="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="images\education.png" class="d-block w-100" alt="...">
@@ -84,7 +88,7 @@
             <!-- start deskripsi museum dino -->
             <div class="row align-items-center content" id="home">
                 <div class="col-lg-6">
-                    <div class="text-center" >
+                    <div class="text-center">
                         <h1 id="title-head">MUSEUM OF DINO</h1>
                         <p class="description">Museum of Dino, atau sering disebut Dinosaur Museum, adalah tempat yang
                             dirancang untuk menampilkan berbagai fosil dan informasi seputar kehidupan dinosaurus. Di
@@ -98,7 +102,7 @@
                 </div>
             </div>
             <!-- end deskripsi museum dino -->
-            
+
             <!-- start penjelasan fosil -->
             <div class="row align-items-center content" id="about">
                 <div class="col-md-6 order-2 order-md-1">
@@ -119,7 +123,7 @@
                 </div>
             </div>
             <!-- end penjelasan fosil -->
-            
+
             <!-- start penjelasan Visual 3D -->
             <div class="row align-items-center content" id="tiket">
                 <div class="col-md-6 order-2 order-md-1">
@@ -143,7 +147,7 @@
                 </div>
             </div>
             <!-- end penjelasan Visual 3D -->
-            
+
             <!-- start penjelasan pameran geologi -->
             <div class="row align-items-center content" id="tiket">
                 <div class="col-md-6 order-2 order-md-1">
@@ -152,18 +156,20 @@
                 <div class="col-md-6 text-center order-1 order-md-2">
                     <div class="row justify-content-center">
                         <div class="col-10 col-lg-8 blurb pt-3"></div>
-                        <h2>Pameran Geologi dan Sejarah Bumi</h2>
+                        <h2>Petualangan Musim Panas</h2>
                         <!-- <img src="images/head-dino.png" class="img-fluid id-none d-lg-inline" id="show-geologi"> -->
                         <p class="lead">
-                            Selain dinosaurus, museum ini juga menjelaskan kondisi geologi, seperti aktivitas gunung
-                            berapi
-                            dan pergeseran lempeng tektonik, yang turut memengaruhi kehidupan dinosaurus.
+                            Dino Camp atau Petualangan Musim Panas adalah Program khusus liburan untuk anak-anak yang
+                            berlangsung selama beberapa hari. Anak-anak akan
+                            belajar tentang fosil, mengenal habitat dinosaurus, dan mengikuti kegiatan alam seperti
+                            berkemah di area museum.
+                            Target: Anak-anak usia sekolah dasar.
                         </p>
                     </div>
                 </div>
             </div>
             <!-- end penjelasan pameran geologi -->
-            
+
             <!-- start penjelasan eksperimen edukatif -->
             <div class="row align-items-center content" id="tiket">
                 <div class="col-md-6 order-2 order-md-1">
@@ -175,15 +181,14 @@
                         <h2>Eksperimen Edukatif</h2>
                         <!-- <img src="images/head-dino.png" max-width="10px" class="img-fluid id-none d-lg-inline"> -->
                         <p class="lead">
-                            Ada juga area edukatif di mana anak-anak dapat belajar melalui permainan <br> interaktif
-                            atau ikut
-                            serta dalam simulasi penggalian fosil.
+                            Lokakarya seni yang mengajak pengunjung membuat karya seni <br>dinosaurus, seperti melukis
+                            replika fosil, membuat miniatur dinosaurus, atau menciptakan diorama hutan prasejarah.
                         </p>
                     </div>
                 </div>
             </div>
             <!-- end penjelasan eksperimen edukatif -->
-            
+
             <!-- start penjelasan Teknologi Interaktif -->
             <div class="row align-items-center content" id="tiket">
                 <div class="col-md-6 order-2 order-md-1">
@@ -195,9 +200,9 @@
                         <h2>Teknologi Interaktif</h2>
                         <!-- <img src="images/head-dino.png" max-width="10px" class="img-fluid id-none d-lg-inline"> -->
                         <p class="lead">
-                            Museum modern sering menggunakan teknologi seperti augmented reality (AR), virtual reality
-                            (VR),
-                            dan layar sentuh interaktif untuk menambah wawasan pengunjung.
+                            Pengalaman Virtual Reality (VR) yang membawa pengunjung “kembali” ke zaman dinosaurus untuk
+                            merasakan bagaimana hidup berdampingan dengan dinosaurus. Pengunjung bisa "bertemu" dengan
+                            T-Rex, Triceratops, dan dinosaurus lainnya dalam simulasi VR.
                         </p>
                     </div>
                 </div>
@@ -210,9 +215,11 @@
         <div class="footer-content">
             <div class="footer-section about">
                 <h3>Tentang Museum Dino</h3>
-                <p>Museum Dino adalah destinasi edukatif yang menyajikan informasi menarik tentang dunia prasejarah dan kehidupan dinosaurus. Temukan fosil asli, diorama, dan pameran interaktif yang mengajak Anda menjelajah masa lalu jutaan tahun yang lalu.</p>
+                <p>Museum Dino adalah destinasi edukatif yang menyajikan informasi menarik tentang dunia prasejarah dan
+                    kehidupan dinosaurus. Temukan fosil asli, diorama, dan pameran interaktif yang mengajak Anda
+                    menjelajah masa lalu jutaan tahun yang lalu.</p>
             </div>
-    
+
             <div class="footer-section links">
                 <h3>Navigasi</h3>
                 <ul>
@@ -222,14 +229,14 @@
                     <li><a href="event.html">Acara</a></li>
                 </ul>
             </div>
-    
+
             <div class="footer-section contact-info">
                 <h3>Kontak Kami</h3>
                 <p><i class="fas fa-map-marker-alt"></i> Jl. Prasejarah No.123, Kota Dinosaurus</p>
                 <p><i class="fas fa-phone"></i> +62 123-4567-890</p>
                 <p><i class="fas fa-envelope"></i> info@museumdino.com</p>
             </div>
-    
+
             <div class="footer-section social-media">
                 <h3>Ikuti Kami</h3>
                 <a href="#"><i class="fab fa-facebook-square"></i></a>
@@ -238,20 +245,20 @@
                 <a href="#"><i class="fab fa-youtube-square"></i></a>
             </div>
         </div>
-    
+
         <div class="footer-bottom">
             <p>&copy; 2024 Museum Dino | Hak Cipta Dilindungi</p>
         </div>
     </footer>
     <!-- start CDN link Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
         </script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
         </script>
     <!-- end CDN link Bootstrap -->
-    
+
     <script>
         $(function () {
             $(document).scroll(function () {
@@ -261,4 +268,5 @@
         });
     </script>
 </body>
+
 </html>
