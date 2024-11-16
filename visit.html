@@ -42,13 +42,12 @@
                 <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     <a class="nav-link" href="visit.html">Visit</a>
-                    <a class="nav-link" href="tiket.html">Ticket</a>
                     <a class="nav-link" href="event.html">Event</a>
                 </div>
             </div>
 
             <!-- start component search -->
-            <form class="d-none d-lg-flex ms-auto" role="search">
+            <form class="d-none d-lg-flex ms-auto" role="search" id="form-search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
@@ -61,11 +60,11 @@
         <div class="row align-items-center content" id="home">
             <div class="col-lg-6 order-1 order-md-2">
                 <div class="text-center">
-                    <h1 class="d-lg-block mt-5" id="title-head">MUSEUM OF DINO</h1>
-                    <p class="description">Museum of Dino, atau sering disebut Dinosaur Museum, adalah tempat yang
-                        dirancang untuk menampilkan berbagai fosil dan informasi seputar kehidupan dinosaurus. Di
-                        dalamnya, pengunjung bisa melihat replika tulang belulang <br> dinosaurus yang sudah disusun
-                        sedemikian rupa sehingga menyerupai bentuk <br> aslinya ketika hidup jutaan tahun yang lalu.
+                    <h1 class="d-lg-block mt-5 " id="title-head">MUSEUM DINO</h1>
+                    <p class="description">Selamat datang di MuseumDino, Museum yang akan membawa Anda <br>dan keluarga
+                        menjelajahi kehidupan dinosaurus dan era prasejarah dengan cara yang seru dan interaktif! Museum
+                        ini dirancang untuk memberikan pengalaman edukatif dan menghibur bagi pengunjung dari segala
+                        usia, <br>khususnya bagi para penggemar dinosaurus.
                     </p>
                 </div>
             </div>
@@ -109,12 +108,206 @@
         </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-        </script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
-        </script>
+    <section>
+        <div class="container">
+            <h1 class="d-lg-block text-center" id="title-tiket">Tiket MuseumDinoID..</h1>
+            <div class="box-pricing">
+                <!-- start component Tabel ke-1  -->
+                <div class="pricing-table">
+                    <h2 class="pricing-header">tiket reguler</h2>
+
+                    <article class="pricing-plan text-center">
+                        <p class="pricing-start">mulai dari</p>
+                        <span class="pricing-class">Rp 60.0000</span>
+                        <p class="pricing-duration">perhari</p>
+                        <h3 class="pricing-best-features">fitur Unggulan</h3>
+                        <ul class="pricing-features text-start mb-5">
+                            <li>Galeri Umum</li>
+                            <li>Akses ke semua ruang pameran utama</li>
+                            <li>Berlaku untuk satu kali kunjungan</li>
+                            <li> Harga tiket paling terjangkau</li>
+                        </ul>
+                    </article>
+                    <button class="pricing-button" onclick="window.open('payment.html', '_blank')">Order</button>
+                </div>
+                <!-- end component Tabel ke-1  -->
+
+                <!-- start component Tabel ke-2  -->
+                <div class="pricing-table">
+                    <h2 class="pricing-header">tiket premium</h2>
+
+                    <article class="pricing-plan text-center">
+                        <p class="pricing-start">mulai dari</p>
+                        <span class="pricing-class">Rp 175.0000</span>
+                        <p class="pricing-duration">perhari</p>
+                        <h3 class="pricing-best-features">fitur Unggulan</h3>
+                        <ul class="pricing-features text-start mb-5">
+                            <li>Akses luas lebih dibanding tiket reguler</li>
+                            <li>Sesi tur yang dipandu</li>
+                            <li>Berlaku untuk satu kali kunjungan</li>
+                            <li>Harga Sedikit lebih mahal </li>
+                        </ul>
+                    </article>
+                    <button class="pricing-button" onclick="window.open('payment.html', '_blank')">Order</button>
+                </div>
+                <!-- end component Tabel ke-2  -->
+
+
+                <!-- start component Tabel ke-3  -->
+                <div class="pricing-table">
+                    <h2 class="pricing-header">tiket vIP</h2>
+
+                    <article class="pricing-plan text-center mb-5">
+                        <p class="pricing-start">mulai dari</p>
+                        <span class="pricing-class">Rp 250.000</span>
+                        <p class="pricing-duration">perhari</p>
+                        <h3 class="pricing-best-features">fitur Unggulan</h3>
+                        <ul class="pricing-features text-start mb-5">
+                            <li>Mencakup semua akses yang tersedia</li>
+                            <li> Akses lounge VIP</li>
+                            <li>Berlaku lebih dari satu hari</li>
+                            <li>Harga yang paling mahal</li>
+                        </ul>
+                    </article>
+                    <button class="pricing-button" onclick="window.open('payment.html', '_blank')">Order</button>
+                </div>
+                <!-- end component Tabel ke-3  -->
+
+                <!-- start component Tabel ke-4  -->
+                <div class="pricing-table">
+                    <h2 class="pricing-header">dino fest</h2>
+
+                    <article class="pricing-plan text-center">
+                        <p class="pricing-start">mulai dari</p>
+                        <span class="pricing-class">Rp 150.000</span>
+                        <p class="pricing-duration">perhari</p>
+                        <h3 class="pricing-best-features">fitur Unggulan</h3>
+                        <ul class="pricing-features text-start mb-5">
+                            <li>Mencakup semua akses yang tersedia</li>
+                            <li>Diskon khusus untuk berbagai merchandise</li>
+                            <li>Pengalaman VR ( Virtual Reality )</li>
+                            <li>menghadirkan spesimen fosil langka</li>
+                        </ul>
+                    </article>
+                    <button class="pricing-button" onclick="window.open('payment.html', '_blank')">Order</button>
+                </div>
+                <!-- end component Tabel ke-4  -->
+
+                <!-- start component Tabel ke-5  -->
+                <div class="pricing-table">
+                    <h2 class="pricing-header">International Museum Day</h2>
+                    <article class="pricing-plan text-center">
+                        <p class="pricing-start">mulai dari</p>
+                        <span class="pricing-class">Rp 225.0000</span>
+                        <p class="pricing-duration">perhari</p>
+                        <h3 class="pricing-best-features">fitur Unggulan</h3>
+                        <ul class="pricing-features text-start mb-5">
+                            <li>Mencakup semua akses yang tersedia</li>
+                            <li>Diskon khusus untuk berbagai merchandise</li>
+                            <li>Diskusi dengan Ahli Paleontologi</li>
+                            <li>Pengalaman VR ( Virtual Reality )</li>
+                        </ul>
+                    </article>
+                    <button class="pricing-button" onclick="window.open('payment.html', '_blank')">Order</button>
+                </div>
+                <!-- end component Tabel ke-5  -->
+
+
+                <!-- start component Tabel ke-6  -->
+                <div class="pricing-table">
+                    <h2 class="pricing-header">Jurassic Kids Workshop</h2>
+                    <article class="pricing-plan text-center mb-5">
+                        <p class="pricing-start">mulai dari</p>
+                        <span class="pricing-class">Rp 185.000</span>
+                        <p class="pricing-duration">perhari</p>
+                        <h3 class="pricing-best-features">fitur Unggulan</h3>
+                        <ul class="pricing-features text-start mb-5">
+                            <li>Mencakup semua akses yang tersedia</li>
+                            <li>Permainan edukatif seperti Dino Hunt</li>
+                            <li>Pengalaman VR ( Virtual Reality )</li>
+                            <li>Diskon khusus untuk berbagai merchandise</li>
+                        </ul>
+                    </article>
+                    <button class="pricing-button" onclick="window.open('payment.html', '_blank')">Order</button>
+                </div>
+                <!-- end component Tabel ke-6  -->
+
+                <!-- start component Tabel ke-7  -->
+                <div class="pricing-table">
+                    <h2 class="pricing-header">Night at the Dino</h2>
+                    <article class="pricing-plan text-center mb-5">
+                        <p class="pricing-start">mulai dari</p>
+                        <span class="pricing-class">Rp 200.000</span>
+                        <p class="pricing-duration">perhari</p>
+                        <h3 class="pricing-best-features">fitur Unggulan</h3>
+                        <ul class="pricing-features text-start mb-5">
+                            <li>Mencakup semua akses yang tersedia</li>
+                            <li>Permainan edukatif seperti Dino Hunt</li>
+                            <li>Pengalaman VR ( Virtual Reality )</li>
+                            <li>Diskon khusus untuk berbagai merchandise</li>
+                        </ul>
+                    </article>
+                    <button class="pricing-button" onclick="window.open('payment.html', '_blank')">Order</button>
+                </div>
+                <!-- end component Tabel ke-7  -->
+
+                <!-- start component Tabel ke-8  -->
+                <div class="pricing-table">
+                    <h2 class="pricing-header">Jurassic Adventure</h2>
+                    <article class="pricing-plan text-center mb-5">
+                        <p class="pricing-start">mulai dari</p>
+                        <span class="pricing-class">Rp 215.000</span>
+                        <p class="pricing-duration">perhari</p>
+                        <h3 class="pricing-best-features">fitur Unggulan</h3>
+                        <ul class="pricing-features text-start mb-5">
+                            <li>Mencakup semua akses yang tersedia</li>
+                            <li>Permainan edukatif seperti Dino Hunt</li>
+                            <li>Pengalaman VR ( Virtual Reality )</li>
+                            <li>Diskon khusus untuk berbagai merchandise</li>
+                        </ul>
+                    </article>
+                    <button class="pricing-button" onclick="window.open('payment.html', '_blank')">Order</button>
+                </div>
+                <!-- end component Tabel ke-8  -->
+
+                <!-- start component Tabel ke-9  -->
+                <div class="pricing-table">
+                    <h2 class="pricing-header">Science Fair</h2>
+                    <article class="pricing-plan text-center mb-5">
+                        <p class="pricing-start">mulai dari</p>
+                        <span class="pricing-class">Rp 185.000</span>
+                        <p class="pricing-duration">perhari</p>
+                        <h3 class="pricing-best-features">fitur Unggulan</h3>
+                        <ul class="pricing-features text-start mb-5">
+                            <li>Mencakup semua akses yang tersedia</li>
+                            <li>Permainan edukatif seperti Dino Hunt</li>
+                            <li>Pengalaman VR ( Virtual Reality )</li>
+                            <li>Diskon khusus untuk berbagai merchandise</li>
+                        </ul>
+                    </article>
+                    <button class="pricing-button" onclick="window.open('payment.html', '_blank')">Order</button>
+                </div>
+                <!-- end component Tabel ke-9  -->
+    </section>
+    
+    <!-- lokasi museum -->
+    <section id="lokasi">
+        <div class="container">
+            <h2 class="text-center">Lokasi Museum Dino</h2>
+            <p class="text-center">Museum Dino berlokasi di Jl. Prasejarah No.123, Kota Dinosaurus. Kami menanti kehadiran Anda!</p>
+            <div class="map-container" style="width: 100%; height: 400px;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0851849401816!2d-122.08185158425172!3d37.38605167983319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb24fa6d5dcbb%3A0xdda5026fd5ee60c!2sGoogleplex!5e0!3m2!1sen!2sid!4v1682578994578!5m2!1sen!2sid" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
 
     <footer class="dino-footer">
         <div class="footer-content">
@@ -130,7 +323,6 @@
                 <ul>
                     <li><a href="index.html">Beranda</a></li>
                     <li><a href="about.html">Tentang Kami</a></li>
-                    <li><a href="tiket.html">Tiket</a></li>
                     <li><a href="event.html">Acara</a></li>
                 </ul>
             </div>
@@ -156,6 +348,14 @@
         </div>
     </footer>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+    </script>
+
 <!-- start CDN link Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
@@ -164,6 +364,8 @@
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
     </script>
 <!-- end CDN link Bootstrap -->
+
+
 
 <script>
     $(function () {

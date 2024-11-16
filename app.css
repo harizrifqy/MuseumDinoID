@@ -3,19 +3,25 @@ body {
     font-family: "Nunito", sans-serif;
 }
 
-#navbar {
-    /* background-color: #B9E5E8; */
-    font-size: 1.5rem;
-    font-weight: 100;
+.container {
+    margin-bottom: 100px;
 }
 
+#navbar {
+    /* background-color: #98DED9; */
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-left: 20px;
+}
+
+/* #button-toggler {
+    margin-left: 50px;
+} */
+
 .navbar-toggler {
-    display: inline-block;
-    /* Kembalikan ke bawaan */
-    margin: 0;
-    /* Hapus margin tambahan */
-    position: relative;
-    /* Pastikan posisi relatif terhadap container */
+    display: inline-block;     /* Kembalikan ke bawaan */
+    margin: 20px;     /* Hapus margin tambahan */
+    position: relative;     /* Pastikan posisi relatif terhadap container */
 }
 
 #navbar .scrolled {
@@ -24,25 +30,30 @@ body {
 }
 
 #navbar .nav-link {
-    color: #4A628A;
+    color: #7AB2D3;
     font-size: 1.2rem;
+    font-weight: 300;
     transition: color 0.3s ease;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 /* Efek hover pada fitur */
 #navbar .nav-link:hover {
-    color: #387478;
+    color: #4A628A;
     font-weight: 500;
 }
 
 #navbar .navbar-brand {
-    color: #4A628A;
-    font-size: 1.5rem;
+    color: #7AB2D3;
+    font-size: 1.7rem;
     font-weight: 600;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
     /* Shadow warna hitam transparan */
     transition: all 0.3s ease;
+}
+
+#form-search {
+    margin-right: 20px;
 }
 
 #title-head {
@@ -54,6 +65,13 @@ body {
     font-size: 1.3rem;
     font-weight: 300;
 }
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px; /* Opsional, untuk sudut melengkung */
+}
+
 
 #jadwal li {
     position: relative;

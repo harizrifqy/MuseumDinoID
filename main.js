@@ -1,8 +1,3 @@
-// otomatis buka tab baru ketika klik order
-document.getElementById('orderButton').addEventListener('click', function() {
-    // Membuka halaman baru (misalnya, halaman pembayaran)
-    window.location.href = 'payment.html';  // Mengarahkan ke halaman pembayaran baru
-});
 
 // Fungsi untuk memperbarui harga berdasarkan tiket yang dipilih
 function updateHarga() {

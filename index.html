@@ -34,7 +34,7 @@
                     width="60" height="60"> -->
                 <a class="navbar-brand bold-text" href="#">MUSEUM</a>
                 <!-- start component burger -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" id="button-toggler"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -44,12 +44,11 @@
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         <a class="nav-link" href="visit.html">Visit</a>
-                        <a class="nav-link" href="tiket.html">Ticket</a>
                         <a class="nav-link" href="event.html">Event</a>
                     </div>
                 </div>
                 <!-- start component search  -->
-                <form class="d-none d-lg-flex ms-auto" role="search">
+                <form class="d-none d-lg-flex ms-auto" role="search" id="form-search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
@@ -89,11 +88,11 @@
             <div class="row align-items-center content" id="home">
                 <div class="col-lg-6">
                     <div class="text-center">
-                        <h1 id="title-head">MUSEUM OF DINO</h1>
-                        <p class="description">Museum of Dino, atau sering disebut Dinosaur Museum, adalah tempat yang
-                            dirancang untuk menampilkan berbagai fosil dan informasi seputar kehidupan dinosaurus. Di
-                            dalamnya, pengunjung bisa melihat replika tulang belulang <br> dinosaurus yang sudah disusun
-                            sedemikian rupa sehingga menyerupai bentuk <br> aslinya ketika hidup jutaan tahun yang lalu.
+                        <h1 id="title-head">MUSEUM DINO</h1>
+                        <p class="description">Selamat datang di MuseumDino, Museum yang akan membawa Anda <br>dan keluarga
+                            menjelajahi kehidupan dinosaurus dan era prasejarah dengan cara yang seru dan interaktif! Museum
+                            ini dirancang untuk memberikan pengalaman edukatif dan menghibur bagi pengunjung dari segala
+                            usia, <br>khususnya bagi para penggemar dinosaurus.
                         </p>
                     </div>
                 </div>
@@ -106,7 +105,7 @@
             <!-- start penjelasan fosil -->
             <div class="row align-items-center content" id="about">
                 <div class="col-md-6 order-2 order-md-1">
-                    <img src="images/fosil-dino.png" alt="" class="img-fluid">
+                    <img src="images/dino.png" alt="" class="img-fluid">
                 </div>
                 <div class="col-md-6 text-center order-1 order-md-2">
                     <div class="row justify-content-center">
@@ -151,7 +150,7 @@
             <!-- start penjelasan pameran geologi -->
             <div class="row align-items-center content" id="tiket">
                 <div class="col-md-6 order-2 order-md-1">
-                    <img src="images/dino.png" alt="" class="img-fluid">
+                    <img src="images/petualangan.png" alt="" class="img-fluid" style="border-radius: 10px;">
                 </div>
                 <div class="col-md-6 text-center order-1 order-md-2">
                     <div class="row justify-content-center">
@@ -225,7 +224,6 @@
                 <ul>
                     <li><a href="index.html">Beranda</a></li>
                     <li><a href="about.html">Tentang Kami</a></li>
-                    <li><a href="tiket.html">Tiket</a></li>
                     <li><a href="event.html">Acara</a></li>
                 </ul>
             </div>
