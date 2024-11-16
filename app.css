@@ -121,7 +121,7 @@ body {
 
 /* start tiket.html */
 
-.box-pricing {
+.row {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -426,7 +426,7 @@ button {
 
 @media (max-width: 768px) {
     /* Untuk layar tablet atau lebih kecil */
-    .box-pricing {
+    .row {
         padding: 20px;
         /* Tambahkan padding di semua sisi */
         margin: 0 auto;
@@ -438,7 +438,7 @@ button {
 @media (max-width: 480px) {
 
     /* Untuk layar ponsel */
-    .box-pricing {
+    .row {
         padding: 10px;
         /* Kurangi padding untuk ponsel */
         margin: 0 auto;
