@@ -14,10 +14,6 @@ body {
     margin-left: 20px;
 }
 
-/* #button-toggler {
-    margin-left: 50px;
-} */
-
 .navbar-toggler {
     display: inline-block;     /* Kembalikan ke bawaan */
     margin: 20px;     /* Hapus margin tambahan */
@@ -54,7 +50,7 @@ body {
 
 #form-search {
     margin-right: 20px;
-}
+} 
 
 #title-head {
     font-weight: 400;
@@ -72,6 +68,16 @@ body {
     border-radius: 8px; /* Opsional, untuk sudut melengkung */
 }
 
+#jadwal ul {
+    font-size: 18px;
+}
+#jadwal h2 {
+    font-size: 2.1rem;
+} 
+
+#jadwal p {
+    font-size: 22px;
+}
 
 #jadwal li {
     position: relative;
@@ -144,12 +150,6 @@ body {
 
 }
 
-
-.pricing-button:hover,
-.pricing-button:focus {
-    background-color: #4A628A;
-}
-
 /* bagian judul layanan */
 .pricing-header {
     background-color: #B9E5E8;
@@ -211,7 +211,7 @@ body {
     left: 0;
     color: #3182ce;
     font-size: 16px;
-    line-height: 1;
+    line-height: 2;
 }
 
 /* Style untuk judul fitur unggulan */
@@ -253,6 +253,12 @@ button {
     border: none;
     margin: 0 auto;
 }
+
+.pricing-button:hover,
+.pricing-button:focus {
+    background-color: #4A628A;
+}
+
 
 /* end tiket.html */
 

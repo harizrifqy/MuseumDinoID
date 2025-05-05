@@ -21,13 +21,15 @@
     <!-- Link Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <!-- Link ke CSS lokal -->
+    <!-- Link ke CSS cpanel hosting -->
+    <!-- <link rel="stylesheet" href="https://www.codestudy.my.id/css/app.css"> -->
+    <!-- link css lokal -->
     <link rel="stylesheet" href="app.css">
 
 </head>
 
 <body>
-    <main>
+    <div class="container">
         <nav class="navbar fixed-top navbar-expand-lg mt-2" id="navbar">
             <div class="container-fluid">
                 <!-- <img src="/images/head-dino.png" alt="head of dino"
@@ -57,7 +59,7 @@
         </nav>
 
             <!-- start carousel atau slide gambar -->
-            <div id="carouselExampleControlsNoTouching" class="carousel slide mt-5" data-bs-touch="false">
+            <header id="carouselExampleControlsNoTouching" class="carousel slide mt-5" data-bs-touch="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="images/education.png" class="d-block w-100" alt="...">
@@ -79,24 +81,24 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
-            </div>
+            </header>
             <!-- end carousel atau slide gambar -->
 
-        <section class="container-fluid px-0">
+        <main class="container-fluid px-0">
             <!-- start deskripsi museum dino -->
             <div class="row align-items-center content" id="home">
                 <div class="col-lg-6">
-                    <div class="text-center">
+                    <section class="text-center">
                         <h1 id="title-head">MUSEUM DINO</h1>
                         <p class="description">Selamat datang di MuseumDino, Museum yang akan membawa Anda <br>dan keluarga
                             menjelajahi kehidupan dinosaurus dan era prasejarah dengan cara yang seru dan interaktif! Museum
                             ini dirancang untuk memberikan pengalaman edukatif dan menghibur bagi pengunjung dari segala
                             usia, <br>khususnya bagi para penggemar dinosaurus.
                         </p>
-                    </div>
+                    </section>
                 </div>
                 <div class="col-lg-6 d-none d-lg-block">
-                    <img class="img-fluid" src="images/dino-1.png" alt="">
+                    <img class="img-fluid" src="images/dino-1.png" alt="" style="border-radius: 10px;">
                 </div>
             </div>
             <!-- end deskripsi museum dino -->
@@ -108,15 +110,15 @@
                 </div>
                 <div class="col-md-6 text-center order-1 order-md-2">
                     <div class="row justify-content-center">
-                        <div class="col-10 col-lg-8 blurb pt-3"></div>
-                        <h2>Fosil dan Rangka Dinosaurus</h2>
-                        <!-- <img src="images/head-dino.png" max-width="10px" class="img-fluid id-none d-lg-inline"> -->
-                        <p class="lead">
-                            Museum ini biasanya menampilkan kerangka lengkap atau parsial dinosaurus,<br> seperti
-                            Tyrannosaurus
-                            Rex, Triceratops, dan Velociraptor, yang disusun <br>dalam posisi tertentu agar lebih
-                            realistis.
-                        </p>
+                        <section class="col-10 col-lg-8 blurb pt-3"></section>
+                            <h2>Fosil dan Rangka Dinosaurus</h2>
+                            <!-- <img src="images/head-dino.png" max-width="10px" class="img-fluid id-none d-lg-inline"> -->
+                            <p class="lead">
+                                Museum ini biasanya menampilkan kerangka lengkap atau parsial dinosaurus,<br> seperti
+                                Tyrannosaurus
+                                Rex, Triceratops, dan Velociraptor, yang disusun <br>dalam posisi tertentu agar lebih
+                                realistis.
+                            </p>
                     </div>
                 </div>
             </div>
@@ -146,7 +148,7 @@
             </div>
             <!-- end penjelasan Visual 3D -->
 
-            <!-- start penjelasan pameran geologi -->
+            <!-- start penjelasan petualangan musim panas -->
             <div class="row align-items-center content">
                 <div class="col-md-6 order-2 order-md-1">
                     <img src="images/petualangan.png" alt="" class="img-fluid" style="border-radius: 10px;">
@@ -166,7 +168,7 @@
                     </div>
                 </div>
             </div>
-            <!-- end penjelasan pameran geologi -->
+            <!-- end penjelasan petualangan musim panas -->
 
             <!-- start penjelasan eksperimen edukatif -->
             <div class="row align-items-center content">
@@ -206,41 +208,41 @@
                 </div>
             </div>
             <!-- end penjelasan Teknologi Interaktif -->
-        </section>
-    </main>
+        </main>
+    </div>
 
     <footer class="dino-footer">
         <div class="footer-content">
-            <div class="footer-section about">
+            <article class="footer-section about">
                 <h3>Tentang Museum Dino</h3>
                 <p>Museum Dino adalah destinasi edukatif yang menyajikan informasi menarik tentang dunia prasejarah dan
                     kehidupan dinosaurus. Temukan fosil asli, diorama, dan pameran interaktif yang mengajak Anda
                     menjelajah masa lalu jutaan tahun yang lalu.</p>
-            </div>
+            </article>
 
-            <div class="footer-section links">
+            <section class="footer-section links">
                 <h3>Navigasi</h3>
                 <ul>
                     <li><a href="index.html">Beranda</a></li>
                     <li><a href="about.html">Tentang Kami</a></li>
                     <li><a href="event.html">Acara</a></li>
                 </ul>
-            </div>
+            </section>
 
-            <div class="footer-section contact-info">
+            <section class="footer-section contact-info">
                 <h3>Kontak Kami</h3>
                 <p><i class="fas fa-map-marker-alt"></i> Jl. Prasejarah No.123, Kota Dinosaurus</p>
                 <p><i class="fas fa-phone"></i> +62 123-4567-890</p>
                 <p><i class="fas fa-envelope"></i> info@museumdino.com</p>
-            </div>
+            </section>
 
-            <div class="footer-section social-media">
+            <section class="footer-section social-media">
                 <h3>Ikuti Kami</h3>
                 <a href="#"><i class="fab fa-facebook-square"></i></a>
                 <a href="https://www.instagram.com/museumdinoid/"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-twitter-square"></i></a>
                 <a href="#"><i class="fab fa-youtube-square"></i></a>
-            </div>
+            </section>
         </div>
 
         <div class="footer-bottom">
@@ -256,6 +258,9 @@
         </script>
     <!-- end CDN link Bootstrap -->
 
+    <script 
+    src="http://www.codestudy.my.id/js/main.js">
+    </script>
     <script>
         $(function () {
             $(document).scroll(function () {
